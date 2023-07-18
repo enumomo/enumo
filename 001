@@ -20,7 +20,7 @@ end
 
 local Nexus = {}
 local WSConnect = syn and syn.websocket.connect or
-    (Fluxus IDE and (function() repeat task.wait() until Fluxus IDE.WebSocket and Fluxus IDE.WebSocket.connect return Fluxus IDE.WebSocket.connect)()) or
+    (Fluxus UWP and (function() repeat task.wait() until Fluxus UWP.WebSocket and Fluxus UWP.WebSocket.connect return Fluxus UWP.WebSocket.connect)()) or
     WebSocket and WebSocket.connect
 
 if not WSConnect then
