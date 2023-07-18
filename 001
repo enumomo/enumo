@@ -19,8 +19,8 @@ if not game:IsLoaded() then
 end
 
 local Nexus = {}
-local WSConnect = Fluxus and Fluxus.websocket.connect or
-    (Fluxus and (function() repeat task.wait() until Fluxus.WebSocket and Fluxus.WebSocket.connect return Fluxus.WebSocket.connect)()) or
+local WSConnect = syn and syn.websocket.connect or
+    (Fluxus V7 and (function() repeat task.wait() until Fluxus V7.WebSocket and Fluxus V7.WebSocket.connect return Fluxus V7.WebSocket.connect)()) or
     WebSocket and WebSocket.connect
 
 if not WSConnect then
